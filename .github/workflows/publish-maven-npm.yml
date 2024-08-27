@@ -35,8 +35,8 @@ jobs:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_INJI_TEAM }}
   
   publish-to-npm-registry:
-    #if: ${{ inputs.publish == 'Both[Kotlin and JS]' || inputs.publish == 'js'}}
-    uses: abhishek8shankar/kattu/.github/workflows/npm-publish-to-npm-registry.yml@MO-33991
+    if: ${{ inputs.publish == 'Both[Kotlin and JS]' || inputs.publish == 'js'}}
+    uses: abhishek8shankar/kattu/.github/workflows/npm-publish-to-npm-registry.yml@MOSIP-33991
     with:
       SERVICE_LOCATION: 'js'
     secrets:
