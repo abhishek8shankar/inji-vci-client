@@ -1,5 +1,5 @@
 {
-  "name": "@abhishek/inji-vci-client",
+  "name": "abhi-inji-vci-client",
   "version": "0.2.0",
   "description": "JS library which can request for a credential from issuer. This module follows OpenID4VCI specification.",
   "main": "src/index.js",
